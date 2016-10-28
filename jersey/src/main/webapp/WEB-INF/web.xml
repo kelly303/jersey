@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<display-name>jersey</display-name>
+	<servlet>
+		<servlet-name>JerseyWebService</servlet-name>
+		<servlet-class>com.jersey.application.StartServer</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JerseyWebService</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+</web-app>
